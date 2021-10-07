@@ -1,0 +1,67 @@
+{
+  "name": "humgqr",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://qrhumg.ezyro.com",
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@react-icons/all-files": "^4.1.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "apollo-boost": "^0.4.9",
+    "axios": "^0.21.4",
+    "bootstrap": "^5.1.1",
+    "graphql": "^15.6.0",
+    "graphql-tag": "^2.12.5",
+    "moment": "^2.29.1",
+    "qrcode.react": "^1.0.1",
+    "query-string": "^7.0.1",
+    "react": "^17.0.2",
+    "react-apollo": "^3.1.5",
+    "react-bootstrap": "^2.0.0-rc.0",
+    "react-copy-to-clipboard": "^5.0.4",
+    "react-dom": "^17.0.2",
+    "react-file-base64": "^1.0.3",
+    "react-hot-toast": "^2.1.1",
+    "react-html-parser": "^2.0.2",
+    "react-icons": "^4.3.0",
+    "react-player": "^2.9.0",
+    "react-redux": "^7.2.5",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "react-share": "^4.4.0",
+    "react-slick": "^0.28.1",
+    "reactjs-popup": "^2.0.5",
+    "redux": "^4.1.1",
+    "redux-saga": "^1.1.3",
+    "slick-slider": "^1.8.2",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

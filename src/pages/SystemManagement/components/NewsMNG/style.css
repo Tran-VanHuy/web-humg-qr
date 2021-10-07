@@ -1,0 +1,14 @@
+.content-news {
+      color: #333333;
+      white-space: pre-wrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      font-size: 14px;
+}
+
+.title-content{
+
+      width: 50%;
+}

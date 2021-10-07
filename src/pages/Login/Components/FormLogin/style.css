@@ -1,0 +1,20 @@
+.wrapper-form-login {
+      min-height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.item-form-login {
+      
+      min-width: 30%;
+      border: 3px solid #c2c2c2;
+      border-radius: 5px;
+      padding: 15px 15px;
+}
+
+.error-info{
+
+      color: red;
+      font-size: 14px;
+}

@@ -1,0 +1,34 @@
+
+.wrapper-header{
+
+    height: 130px;
+    position: relative;
+}
+
+img {
+
+      width: 100%;
+      height: 100%;
+}
+
+.login{
+
+      position: absolute;
+      top: 8%;
+      right: 8%;
+      display: flex;
+      gap: 10px;
+}
+
+@media only screen and (max-width: 415px) {
+
+      .wrapper-header{
+
+            height: 45px;
+        }
+       
+        .login {
+
+            display: none;
+        }
+}

@@ -1,0 +1,34 @@
+.wrapper-LeftInfomation{
+
+      height: 100%;
+}
+.leftinfomation-top{
+
+      height: 75%;
+      margin-bottom: 15px;
+}
+
+.leftinfomation-top div{
+
+      height: 100%;
+}
+.leftinfomation-bottom{
+
+      display: flex;
+      justify-content: space-between;
+      gap: 15px
+}
+
+.item-img-leftinfomation{
+
+      width: 25%;
+      height: 100px;
+
+}
+.img-thumnail-sider{
+
+      height: 300px;
+}
+.img-thumnail-sider img{
+      height: 300px;
+}

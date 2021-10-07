@@ -1,0 +1,47 @@
+.wrapper-video{
+
+      padding: 0 135px;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 50px;
+}
+
+.item-video{
+
+      height: 270px;
+      width: 570px;
+      background: black;
+}
+
+@media only screen and (max-width: 1025px) {
+    
+      .wrapper-video {
+            padding: 0 90px;
+        }
+    }
+
+    @media only screen and (max-width: 769px) {
+    
+      .wrapper-video {
+            padding: 0 30px;
+        }
+    }
+
+    @media only screen and (max-width: 415px) {
+    
+      .wrapper-video{
+
+            gap : 5px;
+      }
+      .content-video{
+
+            display: none;
+           
+      }
+
+      .item-video{
+
+            height: 145px;
+      }
+    }

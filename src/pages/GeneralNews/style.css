@@ -1,0 +1,22 @@
+
+.wrapper-ganera-news{
+
+      display: flex;
+      gap: 100px;
+      padding: 45px 90px;
+}
+
+.wrapper-ganera-news-left{
+
+      width: 60%;
+}
+
+.wrapper-ganera-news-right{
+
+      width: 40%;
+}
+
+.content-function{
+
+      margin-bottom:unset ;
+}
