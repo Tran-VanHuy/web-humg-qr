@@ -2,18 +2,18 @@
 .wrapper-ganera-news{
 
       display: flex;
-      gap: 100px;
+      gap: 35px;
       padding: 45px 90px;
 }
 
 .wrapper-ganera-news-left{
 
-      width: 60%;
+      width: 75%;
 }
 
 .wrapper-ganera-news-right{
 
-      width: 40%;
+      width: 25%;
 }
 
 .content-function{

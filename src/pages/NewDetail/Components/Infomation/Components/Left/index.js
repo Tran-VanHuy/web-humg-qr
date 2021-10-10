@@ -1,23 +1,28 @@
 import React, { useEffect, useState } from "react";
-import { dispatch } from "react-hot-toast/dist/core/store";
 import { useDispatch } from "react-redux";
 import "./style.css";
 
 const LeftInfomation = ({ data }) => {
-  const [url, setUrl] = useState();
- 
+  const [url, setUrl] = useState("");
+  useEffect(() => {
+    if (data && data.length !== 0) {
+      setUrl(data.img_new_1.url);
+    }
+   
+  }, [data]);
+  useEffect(() => {}, [data]);
 
   return (
     <div className="wrapper-LeftInfomation">
       <div className="leftinfomation-top">
         <div className="">
           {url === null ? (
+            <img src="/images/thongbao_Key_26052021092402.jpg" alt="" />
+          ) : (
             <img
-              src= "/images/thongbao_Key_26052021092402.jpg"
+              src={`${url ? url : "/images/thongbao_Key_26052021092402.jpg"}`}
               alt=""
             />
-          ) : (
-            <img src={`${url}`} alt="" />
           )}
         </div>
       </div>

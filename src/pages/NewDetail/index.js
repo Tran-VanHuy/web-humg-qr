@@ -11,11 +11,13 @@ import "./style.css";
 const PageNewDetail = (props) => {
   const slug = props.match.params.slug;
   const { dataFilterNews } = useSelector((state) => state.newRuducer);
-  console.log({});
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(filterNews(slug));
   }, [dispatch, slug]);
+  useEffect(() => {
+   
+  }, [dataFilterNews]);
   return (
     <div className = "wrapper-page-news">
       <Menu />
@@ -32,6 +34,7 @@ const PageNewDetail = (props) => {
               />
             </div>
             <div className="wrapper-right-information">
+            
               <RightInfomation
                 slug={slug}
                 data={
