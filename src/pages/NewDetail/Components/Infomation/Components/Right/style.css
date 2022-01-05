@@ -70,7 +70,7 @@
 
 .modal-body{
 
-      display: flex !important;
-    align-items: center !important;
+display: flex !important;
+  align-items: left;
     justify-content: center !important;
 }

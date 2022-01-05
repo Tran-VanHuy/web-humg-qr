@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const FaInformation = () => {
   return (
-    <div>
       <div className="wrapper-fai">
         {" "}
         <div className="wrapper-content-fai">
@@ -35,7 +34,6 @@ const FaInformation = () => {
           <div className="img-choice-fai">Khác</div>
         </div>
       </div>
-    </div>
   );
 };
 

@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const NewRight = () => {
   const { dataNews } = useSelector((state) => state.newRuducer);
-  console.log(dataNews);
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getNews());
@@ -98,22 +98,22 @@ const NewRight = () => {
         {dataNews && dataNews.length > 0
           ? dataNews.slice(1, 4).map((item, index) => (
               <div className="wrapper-news-3-item">
-              <Link to={`/tin-tuc/${item.slug}`}>
-                <div className="img-news-3-item">
-                  <img
-                    src={`${
-                      item.acf.img_new_1.url ??
-                      "/images/thongbao_Key_26052021092402.jpg"
-                    }`}
-                    alt=""
-                  />
-                </div>
+                <Link to={`/tin-tuc/${item.slug}`}>
+                  <div className="img-news-3-item">
+                    <img
+                      src={`${
+                        item.acf.img_new_1.url ??
+                        "/images/thongbao_Key_26052021092402.jpg"
+                      }`}
+                      alt=""
+                    />
+                  </div>
                 </Link>
 
                 <Link to={`/tin-tuc/${item.slug}`}>
-                <div className="content-news-3-item">
-                  {ReactHtmlParser(item.title.rendered)}
-                </div>
+                  <div className="content-news-3-item">
+                    {ReactHtmlParser(item.title.rendered)}
+                  </div>
                 </Link>
                 <div className="time-news-top-left">
                   Khoa cơ điện -{" "}

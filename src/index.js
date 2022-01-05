@@ -8,16 +8,19 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter } from "react-router-dom";
+import { createBrowserHistory } from "history";
 
-ReactDOM.render(
-  <BrowserRouter>
-    <Provider store={store}>
-      <React.StrictMode>
+const history = createBrowserHistory();
+
+ReactDOM.hydrate(
+  <BrowserRouter history={history}>
+    <React.StrictMode>
+      <Provider store={store}>
         <Layout>
           <App />
         </Layout>
-      </React.StrictMode>
-    </Provider>
+      </Provider>
+    </React.StrictMode>
   </BrowserRouter>,
   document.getElementById("root")
 );

@@ -1,18 +1,24 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import Home from './Componets';
-import FaInformation from './Componets/facilitiesinformation';
-import Video from './Componets/video';
+
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
+import Home from "./Componets";
+import FaInformation from "./Componets/facilitiesinformation";
+import Video from "./Componets/video";
 
 const HomePage = () => {
+  return (
+    <>
+    <Helmet>
+      <title>Trang chủ</title>
+    </Helmet>
     
-      return (
-            <div style = {{marginBottom: "20px"}}>
-                 <Home /> 
-                 <Video />
-                 <FaInformation />
-            </div>
-      );
+      <div style={{ paddingBottom: "20px" }}>
+        <Home />
+        <Video />
+        <FaInformation />
+      </div>
+    </>
+  );
 };
 
 export default HomePage;

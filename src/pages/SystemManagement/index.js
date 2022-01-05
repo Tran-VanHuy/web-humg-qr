@@ -17,6 +17,8 @@ const Manage = () => {
     
   }
   return (
+    <>
+    <title>Quản lý hệ thống</title>
     <div>
       <div className="wrapper-mng">
         <div className="wrapper-left">
@@ -54,6 +56,7 @@ const Manage = () => {
         <h4>Vui lòng sủ dụng máy tính</h4>
       </div>
     </div>
+    </>
   );
 };
 

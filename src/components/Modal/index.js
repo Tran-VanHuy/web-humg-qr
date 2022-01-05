@@ -167,7 +167,7 @@ const Modalpage = ({ type }) => {
               <div className="wrapper-contnet">
                 Video
                 <br></br>
-                <input type="file" onChange={(e) => setVideo(e.target.files)} />
+                <input type="text" onChange={(e) => setVideo(e.target.value)} />
               </div>
               <div className="wrapper-contnet">
                 Image

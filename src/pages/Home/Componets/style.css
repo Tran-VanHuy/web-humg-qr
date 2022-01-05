@@ -110,21 +110,21 @@
   letter-spacing: 1px;
   padding: 10px;
   cursor: pointer;
+  height: 100%;
 }
-a{
-
+a {
   text-decoration: none !important  ;
 }
 
-.text-content-function:hover{
-  background: rgba(0,0,0,.1);
+.text-content-function:hover {
+  background: rgba(0, 0, 0, 0.1);
 }
 span {
   color: #fff;
   font-weight: 500;
 }
 .content-product {
-  padding: 0px 135px 0px 135px;
+  padding: 45px 135px 0;
 }
 
 .content-product-top {
@@ -151,22 +151,32 @@ span {
   width: 100%;
   height: 270px;
   border-radius: 5px;
-  display: flex;
   gap: 5px;
   background: #ffffff;
 }
 
-.item-content-product-top-right-left {
-  width: 40%;
+.item-content-product-top-right-left-homepage {
+  width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.item-content-product-top-right-left img {
+  width: 100%;
+  transition: transform 0.4s ease;
+  transform-origin: 50% 50%;
+}
+
+.item-content-product-top-right-left:hover img {
+  transform: scale(1.2);
+  width: 100%;
 }
 
 .item-content-product-top-right-right {
   width: 60%;
   height: 100%;
+  border-radius: 5px;
 }
 
 .content-product-top-left-1 {
@@ -176,7 +186,21 @@ span {
   margin-bottom: 30px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: #ffffff ;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.content-product-top-left-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+  transform-origin: 50% 50%;
+}
+
+.content-product-top-left-1 img:hover {
+  transform: scale(1.2);
+  width: 100%;
 }
 
 .content-product-top-left-2 {
@@ -202,6 +226,7 @@ span {
 }
 
 .item-content-product-bottom h1 {
+  font-size: 17px;
   padding: 0 20px;
 }
 .view {
@@ -215,7 +240,7 @@ span {
 }
 
 h1 {
-  font-size: 14px !important;
+  font-size: 14px;
   color: #fff;
 }
 
@@ -239,7 +264,7 @@ h2 {
 
 @media only screen and (max-width: 1025px) {
   .content-product {
-    padding: 0px 90px 0px 90px;
+    padding: 45px 90px 0px 90px;
   }
   h1 {
     font-size: 11px;
@@ -269,7 +294,7 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 481px) {
   h2 {
     font-size: 7px;
   }
@@ -304,6 +329,11 @@ h2 {
     width: 100%;
     height: 100%;
   }
+  .item-content-product-top-right-left img {
+
+    object-fit: contain !important;
+  }
+ 
 
   .item-content-product-top-right-left::after {
     content: "Xem chi tiết";
@@ -329,5 +359,14 @@ h2 {
 
   .wrapper-banner {
     height: 250px;
+  }
+}
+
+@media (max-width: 376px) {
+  .item-content-product-bottom h1 {
+    font-size: 7px;
+  }
+  .wrapper-banner {
+    height: 160px;
   }
 }

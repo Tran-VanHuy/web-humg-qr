@@ -1,0 +1,5 @@
+.wrapper-detail img{
+
+      object-fit: cover;
+      vertical-align: unset !important;
+}

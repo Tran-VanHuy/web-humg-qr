@@ -13,6 +13,11 @@
       height: 300px;
 }
 
+.news-top-right img {
+      
+      object-fit: cover;
+}
+
 .title-news-top-left {
       font-weight: bold;
       text-overflow: ellipsis;

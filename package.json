@@ -2,8 +2,13 @@
   "name": "humgqr",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://qrhumg.ezyro.com",
+  "proxy": "http://humg-qr.surge.sh",
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/register": "^7.15.3",
+    "@babel/runtime": "^7.15.4",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "@react-icons/all-files": "^4.1.0",
@@ -13,9 +18,17 @@
     "apollo-boost": "^0.4.9",
     "axios": "^0.21.4",
     "bootstrap": "^5.1.1",
+    "core-js": "^3.19.3",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "express": "^4.17.1",
+    "gatsby-plugin-react-helmet": "^5.0.0",
     "graphql": "^15.6.0",
     "graphql-tag": "^2.12.5",
+    "history": "^5.1.0",
+    "ignore-styles": "^5.0.1",
     "moment": "^2.29.1",
+    "nodemon": "^2.0.13",
     "qrcode.react": "^1.0.1",
     "query-string": "^7.0.1",
     "react": "^17.0.2",
@@ -23,7 +36,9 @@
     "react-bootstrap": "^2.0.0-rc.0",
     "react-copy-to-clipboard": "^5.0.4",
     "react-dom": "^17.0.2",
+    "react-draft-wysiwyg": "^1.14.7",
     "react-file-base64": "^1.0.3",
+    "react-helmet": "^6.1.0",
     "react-hot-toast": "^2.1.1",
     "react-html-parser": "^2.0.2",
     "react-icons": "^4.3.0",
@@ -41,10 +56,13 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "server": "nodemon server",
+    "dev": "react-scripts start",
+    "start": "node server/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "ssr": "node server/index.js"
   },
   "eslintConfig": {
     "extends": [

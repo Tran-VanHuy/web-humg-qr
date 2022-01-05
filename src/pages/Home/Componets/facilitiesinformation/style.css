@@ -40,6 +40,7 @@
       border-radius: 5px;
 }
 
+
 .choice-fai{
       
       display: flex;
@@ -76,7 +77,7 @@
         }
     }
 
-    @media only screen and (max-width: 415px) {
+    @media only screen and (max-width: 481px) {
     
      .title-fai{
 
@@ -98,7 +99,7 @@
             height: 120px;
      }
      .img-choice-fai{
-
+      width: 14%;
       font-size: 7px;
       height: 55px;
      }
@@ -107,3 +108,12 @@
       gap: 5px;
      }
     }
+
+    @media only screen and (max-width: 376px) {
+      .img-choice-fai{
+            width: 13%;
+            font-size: 7px;
+            height: 55px;
+           }
+   
+     }

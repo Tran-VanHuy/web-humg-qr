@@ -49,16 +49,17 @@ const Home = () => {
       </div>
       <div className="wrapper-content">
         <Menu />
-        <div className="content-function-mobile">menu</div>
         <div className="content-product">
           <div className="content-product-top">
             <div className="content-product-top-left">
               <div
                 className="content-product-top-left-1"
-                style={{
-                  backgroundImage: `url('/images/${dataFilterFaculty.img_logo}')`,
-                }}
-              ></div>
+                // style={{
+                //   backgroundImage: `url('/images/${dataFilterFaculty.img_logo}')`,
+                // }}
+              >
+                <img src={`/images/${dataFilterFaculty.img_logo}`} alt="" />
+              </div>
               <div className="content-product-top-left-2">
                 <video width="100%" height="100%" controls>
                   <source
@@ -77,16 +78,12 @@ const Home = () => {
                 }}
               ></div>
               <div className="content-product-top-right-2">
-                <div
-                  className="item-content-product-top-right-left"
-                  style={{
-                    backgroundImage: `url('/images/${dataFilterFaculty.images}')`,
-                    backgroundSize: "100% 100%",
-                  }}
-                ></div>
-                <div className="item-content-product-top-right-right">
-                  {dataFilterFaculty.content}
+                <div className="item-content-product-top-right-left-homepage">
+                  <img src={`/images/${dataFilterFaculty.images}`} alt="" />
                 </div>
+                {/* <div className="item-content-product-top-right-right">
+                  {dataFilterFaculty.content}
+                </div> */}
               </div>
             </div>
           </div>

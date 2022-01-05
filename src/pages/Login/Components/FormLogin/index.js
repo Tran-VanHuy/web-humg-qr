@@ -6,7 +6,6 @@ import { userLoginSuccess } from "../../../../redux/Login/action";
 import { Link, useHistory } from "react-router-dom";
 import "./style.css";
 
-
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassWord] = useState("");
@@ -22,7 +21,6 @@ const Login = () => {
       if (data && data.errCode === 0) {
         dispatch(userLoginSuccess(data.user));
         localStorage.setItem("accesstoken", true);
-        console.log("Login Success");
         history.replace("/quan-ly-he-thong");
       }
     } catch (error) {
@@ -50,7 +48,7 @@ const Login = () => {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <div className = "error-info">{text}</div>
+          <div className="error-info">{text}</div>
         </Form.Group>
         <Button variant="primary" type="submit" onClick={() => onSubmitLogin()}>
           Submit

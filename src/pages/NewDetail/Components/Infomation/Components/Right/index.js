@@ -52,13 +52,13 @@ const RightInfomation = ({ data, slug }) => {
       </div>
       <div className="Title-News-Bottom">
         <div className="item-share">
-          <FacebookShareButton url={`http://localhost:3000/tin-tuc/${slug}`}>
+          <FacebookShareButton url={`http://humg-qr.surge.sh/tin-tuc/${slug}`}>
             Facbooke
           </FacebookShareButton>
         </div>
 
         <div className="item-share">
-          <TwitterShareButton url={`http://localhost:3000/tin-tuc/${slug}`}>
+          <TwitterShareButton url={`http://humg-qr.surge.sh/tin-tuc/${slug}`}>
             Twitter
           </TwitterShareButton>
         </div>
@@ -77,7 +77,7 @@ const RightInfomation = ({ data, slug }) => {
           <Modal.Body>
             <QRCode
               id="qrcode"
-              value={`http://localhost:3000/tin-tuc/${slug}`}
+              value={`http://humg-qr.surge.sh/tin-tuc/${slug}`}
               size={250}
               level={"H"}
               includeMargin={true}
@@ -85,7 +85,7 @@ const RightInfomation = ({ data, slug }) => {
           </Modal.Body>
         </Modal>
         <div className="item-share" onClick={() => onSubmitCopy()}>
-          <CopyToClipboard text={`http://localhost:3000/tin-tuc/${slug}`}>
+          <CopyToClipboard text={`http://humg-qr.surge.sh/tin-tuc/${slug}`}>
             <div>Copy link</div>
           </CopyToClipboard>
         </div>

@@ -12,38 +12,41 @@ const Video = () => {
   }, []);
   return (
     <div className="wrapper-video">
-    {loading === false ? dataVideo.map((item, index) => (
-
-      <div className="item-video" key = {index}>
-        <ReactPlayer
-          url= {`${item.video}`}
-          width={"100%"}
-          height={"100%"}
-        />
-        <div className="content-video">
-          {item.title}
-        </div>
-      </div>
-    )) : (null)}
-     
-      {/* <div className="item-video">
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=eZ8bA6PfEGU"
-          width={"100%"}
-          height={"100%"}
-        />
-        <div className="content-video">
-          [ Bản tin số 6 ] Hãy tự hào khi bạn là sinh viên HUMG !!!
-        </div>
-      </div> */}
-      {/* <div className="item-video">
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=qS44AQqh3rg"
-          width={"100%"}
-          height={"100%"}
-        />
-        <div className="content-video">60s Trường Đại học Mỏ - Địa chất</div>
-      </div> */}
+      {loading === false ? (
+        dataVideo.map((item, index) => (
+         <div className="wrapper-video-1">
+          <div className="item-video" key={index}>
+            <ReactPlayer url={`${item.video}`} width={"100%"} height={"100%"} />
+            
+          </div>
+          <div className="content-video">{item.title}</div>
+          </div>
+        ))
+      ) : (
+        <>
+          {" "}
+          <div className="item-video">
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=eZ8bA6PfEGU"
+              width={"100%"}
+              height={"100%"}
+            />
+            <div className="content-video">
+              [ Bản tin số 6 ] Hãy tự hào khi bạn là sinh viên HUMG !!!
+            </div>
+          </div>
+          <div className="item-video">
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=qS44AQqh3rg"
+              width={"100%"}
+              height={"100%"}
+            />
+            <div className="content-video">
+              60s Trường Đại học Mỏ - Địa chất
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };
